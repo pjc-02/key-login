@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Profile request</title>
+</head>
+<body>
+    <p>ACCESS TOKEN: {{ access_token }}</p>
+    <form action="/get_profile" method="GET">
+        <input type="hidden" name="access_token" value="{{ access_token }}">
+        <button type="submit">Get Profile</button>
+    </form>
+    </body>
+</html>
+
+

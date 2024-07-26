@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Authorization Code</title>
+</head>
+<body>
+    <p>Authorization Code: {{ code }}</p>
+    <form action="/get_token" method="POST">
+        <input type="hidden" name="code" value="{{ code }}">
+        <button type="submit">Get Token</button>
+    </form>
+    </body>
+</html>
+
+
